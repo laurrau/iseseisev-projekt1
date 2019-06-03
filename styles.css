@@ -1,0 +1,220 @@
+.header {
+  text-align:center;
+  font-family: 'Lobster Two', cursive;
+  font-style: italic;
+  float:left;
+}
+
+#pp{
+  max-width:25%;
+    float:right;
+}
+
+
+
+body {
+  font-family:Verdana;
+  color:#aaaaaa;
+  background-image: url("bg2.jpg");
+  background-size:cover;
+}
+
+p {
+  color: black;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+.main {
+  float:left;
+  width:65%;
+  padding:25px 50px 50px 50px;
+  background-color:#e5e5e5;
+
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:35%;
+  padding:25px;
+  margin-top:0px;
+  text-align:center;
+  word-wrap: break-word;
+/*  border-radius: 6px;*/
+}
+
+.footer {
+  background-color:#e5e5e5;
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
+  background-color: #555;
+  opacity: 0.4;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+/* Style the navigation bar */
+.menu {
+padding: 0 0 0 50px;
+ width: 100%;
+ background-color: #555;
+ overflow: auto;
+ opacity: 0.9;
+}
+
+/* Navbar links */
+.menu a {
+ float: left;
+ text-align: center;
+ padding: 12px;
+ color: white;
+ text-decoration: none;
+ font-size: 17px;
+ opacity: 0.9;
+}
+
+/* Navbar links on mouse-over */
+.menu a:hover {
+ background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+ background-color: #708090;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+ .menu a {
+   float: none;
+   display: block;
+ }
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.8s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #555;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2560px;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.a2hs{
+	background-color: black;
+	border: solid;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.a2hs:hover{
+	background-color: gray;
+  	color: white;
+}
